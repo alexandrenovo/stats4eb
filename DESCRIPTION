@@ -1,0 +1,27 @@
+Package: stats4eb
+Type: Package
+Title: Statistics for basic education
+Version: 0.1.0
+Authors@R: c(
+  person( given = "Fernando", family = "de Souza Bastos", role = c( "aut", "cre" ),
+          email = "fernando.bastos@ufv.br" ),
+  person( given = "Alexandre", family = "Fonseca Santos", role = "aut" ))
+Author: Fernando de Souza Bastos [aut, cre],
+        Alexandre Fonseca Santos [aut]
+Maintainer: Fernando de Souza Bastos <fernando.bastos@ufv.br>
+Description: Package created with databases of books of Elementary and Secondary Education in Brazil. Its objective is to assist the teacher in the teaching of basic statistics.
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9000
+Imports: 
+    data.table,
+    tidyverse,
+    dplyr,
+    lubridate,
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.6.0)
