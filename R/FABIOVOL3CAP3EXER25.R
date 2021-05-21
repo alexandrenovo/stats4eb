@@ -1,0 +1,10 @@
+#' FABIOVOL3CAP3EXER25
+#'
+#' VENDAS DE CAMISETA
+#'
+#' @format A data frame with 16 rows and 2 variables:
+#' \describe{
+#'   \item{COR}{COR DA CAMISETA VENDIDA}
+#'   \item{QUANTIDADE VENDIDA}{QUANTIDADE DE CAMISETAS VENDIDAS}
+#' }
+"FABIOVOL3CAP3EXER25"

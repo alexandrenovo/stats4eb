@@ -1,0 +1,10 @@
+#' ADILSONVOL2CAP6EXE2
+#'
+#' TORCEDORES POR CLUBE
+#'
+#' @format A data frame with 7 rows and 2 variables:
+#' \describe{
+#'   \item{CLUBE}{CLUBE BRASILEIRO}
+#'   \item{PERCENTUAL DE TORCEDORES}{TORCEDORES EM PORCENTAGEM}
+#' }
+"ADILSONVOL2CAP6EXE2"

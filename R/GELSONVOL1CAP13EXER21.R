@@ -1,0 +1,10 @@
+#' GELSONVOL1CAP13EXER21
+#'
+#' IDMH UNIDADES DA FEDERACAO 2010
+#'
+#' @format A data frame with 28 rows and 2 variables:
+#' \describe{
+#'   \item{ESTADO}{ESTADOS BRASILEIROS}
+#'   \item{IDMH}{IDMH INDICE DE DESENVOLVIMENTO HUMANO POR MIL}
+#' }
+"GELSONVOL1CAP13EXER21"

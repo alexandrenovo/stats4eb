@@ -1,0 +1,10 @@
+#' GELSONVOL1CAP13EXER15
+#'
+#' NUMEROS DE INSCRICOES NO ENEM 2013
+#'
+#' @format A data frame with 7 rows and 2 variables:
+#' \describe{
+#'   \item{REGIAO}{REGIOES DO BRASIL}
+#'   \item{INSCRITOS}{PESSOAS INSCRITAS POR REGIAO}
+#' }
+"GELSONVOL1CAP13EXER15"

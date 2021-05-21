@@ -1,0 +1,10 @@
+#' FABIOVOL3CAP3EXER19
+#'
+#' FROTA DE VEICULOS NO BRASIL
+#'
+#' @format A data frame with 11 rows and 2 variables:
+#' \describe{
+#'   \item{ANO}{ANO EM QUE FORAM APURADOS OS DADOS}
+#'   \item{VEICULOS}{QUANTIDADE DE VEICULOS NO BRASIL}
+#' }
+"FABIOVOL3CAP3EXER19"

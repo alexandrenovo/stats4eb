@@ -1,0 +1,10 @@
+#' BALESTRIVOL2CAP7EXER7
+#'
+#' EVOLUCAO DA TAXA DE DEMPREGO
+#'
+#' @format A data frame with 11 rows and 2 variables:
+#' \describe{
+#'   \item{ANO}{ANO EM QUE FOI MEDIDO A TAXA DE DESEMPREGO}
+#'   \item{TAXA}{TAXA DE DESEMPREGO EM PORCENTAGEM}
+#' }
+"BALESTRIVOL2CAP7EXER7"

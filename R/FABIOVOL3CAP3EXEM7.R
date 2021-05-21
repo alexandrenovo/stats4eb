@@ -1,0 +1,10 @@
+#' FABIOVOL3CAP3EXEM7
+#'
+#' CASOS DE DENGUE NO BRASIL
+#'
+#' @format A data frame with 14 rows and 2 variables:
+#' \describe{
+#'   \item{ANO}{ANO QUE FOI REALIZADO OS NUMEROS}
+#'   \item{NUMERO DE CASOS}{QUANTIDADE DE CASOS REGISTRADOS NO ANO}
+#' }
+"FABIOVOL3CAP3EXEM7"
