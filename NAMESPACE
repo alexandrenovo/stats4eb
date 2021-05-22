@@ -2,4 +2,5 @@
 
 export("%>%")
 export(barras)
+export(runShiny)
 importFrom(magrittr,"%>%")
