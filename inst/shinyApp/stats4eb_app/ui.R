@@ -8,8 +8,11 @@
 #
 
 # Define UI for application
-shinyUI(fluidPage(
+shinyUI(fluidPage(theme = shinytheme("sandstone"),
     navbarPage(title="stats4eb",
+               tabPanel("Descrição",
+                        source(file="ArquivosUi/descricao.R", local = T, encoding = "UTF-8")[1]
+               ),
                tabPanel("Ensino Fundamental I",
                         source(file="ArquivosUi/EF1.R", local = T, encoding = "UTF-8")[1]
                     ),
