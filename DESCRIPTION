@@ -19,7 +19,25 @@ Imports:
     tidyverse,
     dplyr,
     lubridate,
-    magrittr
+    magrittr, 
+    knitr,
+    shiny,
+    shinyjs,
+    shinyBS,
+    plotly,
+    shinythemes,
+    shinycssloaders,
+    markdown,
+    ggthemes,
+    treemap,
+    leaflet,
+    htmlTable,
+    stringr,
+    gridExtra,
+    RColorBrewer,
+    DT,
+    shinydashboard,
+    shinyWidgets
 Depends: 
     R (>= 3.6.0)
 URL: https://github.com/alexandrenovo/stats4eb
