@@ -29,8 +29,6 @@ Imports:
     shinycssloaders,
     markdown,
     ggthemes,
-    treemap,
-    leaflet,
     htmlTable,
     stringr,
     gridExtra,

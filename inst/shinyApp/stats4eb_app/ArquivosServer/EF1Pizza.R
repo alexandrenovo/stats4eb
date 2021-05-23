@@ -24,13 +24,7 @@ output$table2 <- DT::renderDataTable({
 #############Graficos
 #################################
 
-output$plot2 <- renderLeaflet({
-  dados %>% group_by(Country, latitude, longitude) %>% summarise(NrUniv=n_distinct(University)) %>%
-    leaflet() %>%
-    addTiles() %>%
-    addMarkers(lng = ~longitude, lat = ~latitude, popup = ~NrUniv,
-               clusterOptions = markerClusterOptions(maxClusterRadius = 15))
-})
+
 
 
 
