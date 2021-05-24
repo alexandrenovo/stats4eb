@@ -1,6 +1,6 @@
 #' ADILSONVOL2CAP6EXE1
 #'
-#' NOTAS DA TURMA X
+#' RENDIMENTO MEDIO
 #'
 #' @format A data frame with 11 rows and 2 variables:
 #' \describe{

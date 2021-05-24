@@ -15,6 +15,6 @@ A data frame with 11 rows and 2 variables:
 ADILSONVOL2CAP6EXE1
 }
 \description{
-NOTAS DA TURMA X
+RENDIMENTO MEDIO
 }
 \keyword{datasets}
