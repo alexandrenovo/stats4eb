@@ -7,7 +7,7 @@
 \format{
 A data frame with 7 rows and 3 variables:
 \describe{
-  \item{REGIOES}{REGIOES DO BRASIL}
+  \item{REGIAO}{REGIOES DO BRASIL}
   \item{2004}{VALOR DO ANO DE 2004 EM PORCENTAGEM}
   \item{2014}{VALOR DO ANO DE 2014 EM PORCENTAGEM}
 }

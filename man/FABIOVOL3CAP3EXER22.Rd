@@ -7,7 +7,7 @@
 \format{
 A data frame with 51 rows and 2 variables:
 \describe{
-  \item{APARTAMENTO}{APARTAMENTO DO PREDIO}
+  \item{APARTAMENTOS}{APARTAMENTO DO PREDIO}
   \item{CONSUMO}{CONSUMO DO APARTAMENTO EM KWH}
 }
 }

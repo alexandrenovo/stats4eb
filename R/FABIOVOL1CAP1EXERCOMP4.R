@@ -4,7 +4,7 @@
 #'
 #' @format A data frame with 7 rows and 2 variables:
 #' \describe{
-#'   \item{ANO}{NOTAS QUE A TURMA TIROU}
-#'   \item{NUMERO DE ASSINATURAS}{ASSINATURA EM MILHOES}
+#'   \item{ANO}{ANO EM QUE FOI COLETADO OS VALORES}
+#'   \item{ASSINATURA}{ASSINATURA EM MILHOES}
 #' }
 "FABIOVOL1CAP1EXERCOMP4"

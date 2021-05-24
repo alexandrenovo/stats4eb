@@ -1,0 +1,10 @@
+#' FABIOVOL1CAP1EXERAUTO4
+#'
+#' NOTAS DA CLASSE
+#'
+#' @format A data frame with 7 rows and 2 variables:
+#' \describe{
+#'   \item{NOTAS DA TURMA X}{NOTA DA PROVA}
+#'   \item{FREQUENCIA}{FREQUANCIA DE ALUNOS QUE TIRARAM ESSA NOTA}
+#' }
+"FABIOVOL1CAP1EXERAUTO4"

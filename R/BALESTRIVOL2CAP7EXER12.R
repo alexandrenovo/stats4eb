@@ -5,6 +5,6 @@
 #' @format A data frame with 16 rows and 2 variables:
 #' \describe{
 #'   \item{DIA DA SEMANA}{DIA DA SEMANA EM QUE FOI CONSTATADO A VISITA}
-#'   \item{FREQUNCIA}{FREQUNCIA DE VISITAS EM CADA DIA}
+#'   \item{FREQUENCIA}{FREQUENCIA DE VISITAS EM CADA DIA}
 #' }
 "BALESTRIVOL2CAP7EXER12"
