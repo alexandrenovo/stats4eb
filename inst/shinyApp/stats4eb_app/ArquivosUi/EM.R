@@ -26,3 +26,7 @@ tabsetPanel(
 
 
 )# barra de navegacao interna
+
+
+#Diagrama de arvore
+#(histograma, boxplot, ramos e folhas, entre outros

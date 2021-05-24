@@ -26,3 +26,9 @@ tabsetPanel(
   ##
 
 )# barra de navegacao interna
+
+#Reconhecer titulo, eixos, legendas, fontes e datas
+#grafico de setores
+#Graficos de barras, colunas, linhas ou setores
+#Distribuicao de Frequencias
+#Boxplot
