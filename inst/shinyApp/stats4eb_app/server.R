@@ -13,7 +13,8 @@ shinyServer(function(input, output, session) {
     #########################Dados do Participante####################
     ##################################################################
     source(file="ArquivosServer/EF1Colunas.R", local = T, encoding = "UTF-8")[1]
-    source(file="ArquivosServer/EF1Pizza.R", local = T, encoding = "UTF-8")[1]
+    source(file="ArquivosServer/EF2TabelasGraficos.R", local = T, encoding = "UTF-8")[1]
+    source(file="ArquivosServer/EMTabelasGraficos.R", local = T, encoding = "UTF-8")[1]
 
 
 
