@@ -16,6 +16,7 @@ library("stringr")
 library("gridExtra")
 library("RColorBrewer")
 library("data.table")
+library("echarts4r")
 options(DT.options = list(scrollY="300px",scrollX="300px",
                           pageLength = 100,
                           columnDefs = list(list(className = 'dt-center', targets = "_all"))))
