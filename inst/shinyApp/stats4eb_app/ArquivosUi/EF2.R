@@ -78,7 +78,26 @@ tabsetPanel(
                                                  "Foguete"),
                                        selected = "Simpsons")),
                     column(9,
-                           echarts4rOutput("plotPic2"))))
+                           echarts4rOutput("plotPic2")))),
+
+  tabPanel("Diagrama de Ramos e Folhas",
+           fluidRow(column(3,
+                           selectInput("vetorTree",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER9",
+                                         "BALESTRIVOL2CAP7EXEM5",
+                                         "FABIOVOL3CAP3EXER22"),
+                                       selected = "ADILSONVOL2CAP20EXER9")),
+                    column(9,
+                           verbatimTextOutput("plotTree")))),
+  tabPanel("Gráficos de Pizza",
+           fluidRow(column(3,
+                           selectInput("vetorPie",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER2"),
+                                       selected = "ADILSONVOL2CAP20EXER2")),
+                    column(9,
+                           plotOutput("plotPie"))))
 
 )# barra de navegacao interna
 

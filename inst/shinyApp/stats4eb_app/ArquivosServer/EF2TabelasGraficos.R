@@ -777,3 +777,45 @@ output$plotPic2 <- renderEcharts4r({
 
   }
 })
+
+#####################################
+############Ramos e Folhas###########
+#####################################
+
+output$plotTree <- renderPrint({
+  if(input$vetorTree=="ADILSONVOL2CAP20EXER9"){
+    data <- ADILSONVOL2CAP20EXER9
+    data$ALTURA <- as.numeric(as.character(data$ALTURA))
+    print(stem(data$ALTURA))
+  } else {
+    if(input$vetorTree=="FABIOVOL3CAP3EXER22"){
+      data <- FABIOVOL3CAP3EXER22
+      data$CONSUMO <- as.numeric(as.character(data$CONSUMO))
+      print(stem(data$CONSUMO))
+    } else {
+      data <- BALESTRIVOL2CAP7EXEM5
+      print(stem(data$MASSA))
+    }
+  }
+
+})
+
+#####################################
+############Gráficos de Pizza########
+#####################################
+
+output$plotPie <- renderPlot({
+  #if(input$vetorPie=="ADILSONVOL2CAP20EXER2"){
+    data <- ADILSONVOL2CAP20EXER2
+    data$`PERCENTUAL DE TORCEDORES` <- as.numeric(as.character(data$`PERCENTUAL DE TORCEDORES`))
+    pct <- round(data$`PERCENTUAL DE TORCEDORES`)
+    # Draw oie chart
+    pie(data$`PERCENTUAL DE TORCEDORES`,
+        labels = paste(data$CLUBE, sep = " ", pct, "%"),
+        col = rainbow(length(data$`PERCENTUAL DE TORCEDORES`)),
+        main = "Percentual de Torcedores")
+  #} else {
+
+  #}
+
+})

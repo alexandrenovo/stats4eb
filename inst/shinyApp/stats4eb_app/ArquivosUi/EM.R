@@ -78,10 +78,44 @@ tabsetPanel(
                                                  "Foguete"),
                                        selected = "Simpsons")),
                     column(9,
-                           echarts4rOutput("plotPicEM"))))
+                           echarts4rOutput("plotPicEM")))),
+
+  tabPanel("Diagrama de Ramos e Folhas",
+           fluidRow(column(3,
+                           selectInput("vetorTree2",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER9",
+                                                 "BALESTRIVOL2CAP7EXEM5",
+                                                 "FABIOVOL3CAP3EXER22"),
+                                       selected = "ADILSONVOL2CAP20EXER9")),
+                    column(9,
+                           verbatimTextOutput("plotTree2")))),
+  tabPanel("Gráficos de Pizza",
+           fluidRow(column(3,
+                           selectInput("vetorPie2",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER2"),
+                                       selected = "ADILSONVOL2CAP20EXER2")),
+                    column(9,
+                           plotOutput("plotPie2")))),
+  tabPanel("Histogramas",
+           fluidRow(column(3,
+                           selectInput("vetorHist",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("BALESTRIVOL2CAP7EXEM5"),
+                                       selected = "BALESTRIVOL2CAP7EXEM5")),
+                    column(9,
+                           plotOutput("plotHist")))),
+  tabPanel("Box-Plot",
+           fluidRow(column(3,
+                           selectInput("vetorBox",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("airquality"),
+                                       selected = "airquality")),
+                    column(9,
+                           plotOutput("plotBox"))))
 
 )# barra de navegacao interna
-
 
 #Grafico de barras ou colunas
 #Criar uma tabela de dupla entrada

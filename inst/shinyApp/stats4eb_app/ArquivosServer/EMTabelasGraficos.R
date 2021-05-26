@@ -777,3 +777,84 @@ output$plotPicEM <- renderEcharts4r({
 
   }
 })
+
+#####################################
+############Ramos e Folhas###########
+#####################################
+
+output$plotTree2 <- renderPrint({
+  if(input$vetorTree2=="ADILSONVOL2CAP20EXER9"){
+    data <- ADILSONVOL2CAP20EXER9
+    data$ALTURA <- as.numeric(as.character(data$ALTURA))
+    print(stem(data$ALTURA))
+  } else {
+    if(input$vetorTree2=="FABIOVOL3CAP3EXER22"){
+      data <- FABIOVOL3CAP3EXER22
+      data$CONSUMO <- as.numeric(as.character(data$CONSUMO))
+      print(stem(data$CONSUMO))
+    } else {
+      data <- BALESTRIVOL2CAP7EXEM5
+      print(stem(data$MASSA))
+    }
+  }
+
+})
+
+#####################################
+############Gráficos de Pizza########
+#####################################
+
+output$plotPie2 <- renderPlot({
+  #if(input$vetorPie=="ADILSONVOL2CAP20EXER2"){
+  data <- ADILSONVOL2CAP20EXER2
+  data$`PERCENTUAL DE TORCEDORES` <- as.numeric(as.character(data$`PERCENTUAL DE TORCEDORES`))
+  pct <- round(data$`PERCENTUAL DE TORCEDORES`)
+  # Draw oie chart
+  pie(data$`PERCENTUAL DE TORCEDORES`,
+      labels = paste(data$CLUBE, sep = " ", pct, "%"),
+      col = rainbow(length(data$`PERCENTUAL DE TORCEDORES`)),
+      main = "Percentual de Torcedores")
+  #} else {
+
+  #}
+
+})
+
+#####################################
+############Histogramas##############
+#####################################
+
+output$plotHist <- renderPlot({
+  data <- BALESTRIVOL2CAP7EXEM5
+  ggplot2::ggplot(data, aes(x=MASSA)) +
+    ggplot2::geom_histogram(binwidth = 2, color="black", fill="gray")
+})
+
+#####################################
+############Box-Plot#################
+#####################################
+
+output$plotBox <- renderPlot({
+  airquality$Month <- factor(airquality$Month,
+                             labels = c("May", "Jun", "Jul", "Aug", "Sep"))
+  ggplot2::ggplot(airquality, aes(x = Month, y = Ozone)) +
+    ggplot2::geom_boxplot(colour = "black", fill = "#56B4E9") +
+    ggplot2::scale_y_continuous(name = "Mean ozone in\nparts per billion",
+                       breaks = seq(0, 175, 25),
+                       limits=c(0, 175)) +
+    ggplot2::scale_x_discrete(name = "Month") +
+    ggplot2::ggtitle("Boxplot of mean ozone by month") +
+    ggplot2::theme(axis.line.x = element_line(size = 0.5, colour = "black"),
+          axis.line.y = element_line(size = 0.5, colour = "black"),
+          axis.line = element_line(size=1, colour = "black"),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank(),
+          plot.title=element_text(size = 20),
+          text=element_text(size = 16),
+          axis.text.x=element_text(colour="black", size = 12),
+          axis.text.y=element_text(colour="black", size = 12))
+
+
+})
