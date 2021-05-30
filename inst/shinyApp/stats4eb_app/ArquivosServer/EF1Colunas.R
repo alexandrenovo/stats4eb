@@ -851,3 +851,29 @@ output$plotPic <- renderEcharts4r({
 
   }
 })
+
+
+#output$TextPic <- renderTable({
+#  if(input$vetorPic=="Simpsons") {
+#
+#    "Fonte: https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html"
+#
+#    } else {
+#
+#    if(input$vetorPic=="Lápis") {
+#      #
+#      "Fonte: https://www.listendata.com/2019/06/create-infographics-with-r.html"
+#
+#    } else {
+#
+#      tab1 <- data.frame(c("Fonte:", "Autor", "Link"),
+#                         c("Pictogramas e infografías con R",
+#                              "Rubén F. Bustillo",
+#                              "https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html"))
+#      tab1
+#
+#
+#    }
+#
+#  }
+#})

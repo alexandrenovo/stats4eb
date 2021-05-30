@@ -45,16 +45,23 @@ tabsetPanel(
                                                  "GELSONVOL1CAP13EXER20" ,
                                                  "GELSONVOL1CAP13EXER21" ),
                                        selected = "ADILSONVOL2CAP20EXEMP1"),
+                           #HTML('<div style = "text-align: justify;"><p>
+                           #                       Um gráfico de colunas é criado exibindo um campo
+                           #                        de string no eixo x e um campo de contagem, campo
+                           #                         numérico ou taxa/proporção no eixo y. O
+                           #                        comprimento de cada coluna representa o valor
+                           #                             de cada categoria..</p></div>')
+                           ),
+                    column(3,
+                           DT::dataTableOutput("table1")),
+                    column(6,
+                           plotlyOutput("plot1", height = 600),
                            HTML('<div style = "text-align: justify;"><p>
                                                    Um gráfico de colunas é criado exibindo um campo
                                                    de string no eixo x e um campo de contagem, campo
                                                    numérico ou taxa/proporção no eixo y. O
                                                    comprimento de cada coluna representa o valor
-                                                        de cada categoria..</p></div>')),
-                    column(3,
-                           DT::dataTableOutput("table1")),
-                    column(6,
-                           plotlyOutput("plot1", height = 600)))),
+                                                        de cada categoria..</p></div>')))),
   ##
   tabPanel("Tabelas de Dupla Entrada",
            fluidRow(column(3,
@@ -64,7 +71,17 @@ tabsetPanel(
                                                  "FABIOVOL1CAP1EXERCOMP2"),
                                        selected = "BALESTRIVOL2CAP7EXER6")),
                     column(9,
-                           DT::dataTableOutput("tableDupla")))),
+                           DT::dataTableOutput("tableDupla"),
+                           br(),
+                           hr(),
+                           p("As  tabelas  de  dupla  entrada  ou  tabelas
+                             de  contingência são formadas  pelo  cruzamento
+                             de  duas variáveis categóricas, portanto, é uma
+                             matriz de tamanho “lxc” formada por “l” linhas
+                             contendo as categorias de uma variável na linha
+                             e “c” colunas contendo as categorias de outra
+                             variável na coluna"),
+                           ))),
 
   ##
 
@@ -78,7 +95,15 @@ tabsetPanel(
                                                  "Foguete"),
                                        selected = "Simpsons")),
                     column(9,
-                           echarts4rOutput("plotPic"))))
+                           echarts4rOutput("plotPic"),
+                           br(),
+                           hr(),
+                           p("Um gráfico de imagem, ou pictograma, é um gráfico usado para exibir informações que usam imagens ou símbolos para representar dados."),
+                           tags$ul(
+                             tags$li(tags$b("Simpsons:"), tags$a(href = "https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html", "Pictogramas e infografías con R")),
+                             tags$li(tags$b("Lápis:"), tags$a(href = "https://www.listendata.com/2019/06/create-infographics-with-r.html", "Create Infographics With R")),
+                             tags$li(tags$b("Foguetes:"), tags$a(href = "https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html", "Pictogramas e infografías con R"))
+                           ))))
 
 )# barra de navegacao interna
 
