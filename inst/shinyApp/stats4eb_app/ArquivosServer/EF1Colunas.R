@@ -19,9 +19,6 @@ output$table1 <- DT::renderDataTable({
           if(input$vetornome1=="ADILSONVOL2CAP20EXER10"){
             data <- ADILSONVOL2CAP20EXER10
           } else {
-            if(input$vetornome1=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-            } else {
               if(input$vetornome1=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
               } else {
@@ -164,7 +161,7 @@ output$table1 <- DT::renderDataTable({
         }
       }
     }
-  }
+  #}
 
 
 
@@ -218,14 +215,6 @@ output$plot1 <- renderPlotly({
             data <- ADILSONVOL2CAP20EXER10
             HTML('<div style = "text-align: justify;"><p>Criar Distribuição de Frequências.</p></div>')
           } else {
-            if(input$vetornome1=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-              plot1 <- ggplot2::ggplot(data, aes(CLUBE, `PERCENTUAL DE TORCEDORES`, fill=CLUBE)) +
-                ggplot2::geom_col(show.legend = FALSE) +
-                ggplot2::ggtitle("PERCENTUAL DE TORCEDORES") +
-                #ggplot2::scale_x_continuous(breaks=seq(1997,2007, length=11)) +
-                ggplot2::theme_minimal()
-            } else {
               if(input$vetornome1=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
                 HTML('<div style = "text-align: justify;"><p>Criar tabela dupla entrada.</p></div>')
@@ -494,7 +483,7 @@ output$plot1 <- renderPlotly({
         }
       }
     }
-  }
+  #}
 
   plotly::ggplotly(plot1) %>% plotly::layout(showlegend = FALSE) %>% plotly::style(textposition = "top")
 
@@ -521,9 +510,6 @@ output$tableDupla <- DT::renderDataTable({
           if(input$vetorDupla=="ADILSONVOL2CAP20EXER10"){
             data <- ADILSONVOL2CAP20EXER10
           } else {
-            if(input$vetorDupla=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-            } else {
               if(input$vetorDupla=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
               } else {
@@ -666,7 +652,7 @@ output$tableDupla <- DT::renderDataTable({
         }
       }
     }
-  }
+  #}
 
 
 

@@ -6,7 +6,6 @@ tabsetPanel(
                                        choices=c("ADILSONVOL2CAP20EXEMP1",
                                                  "ADILSONVOL2CAP20EXER1" ,
                                                  #"ADILSONVOL2CAP20EXER10",
-                                                 "ADILSONVOL2CAP20EXER2" ,
                                                  #"ADILSONVOL2CAP20EXER4" ,
                                                  #"ADILSONVOL2CAP20EXER9" ,
                                                  #"ADILSONVOL2CAP6EXE1"   ,

@@ -6,7 +6,6 @@ tabsetPanel(
                                        choices=c("ADILSONVOL2CAP20EXEMP1",
                                                  "ADILSONVOL2CAP20EXER1" ,
                                                  #"ADILSONVOL2CAP20EXER10",
-                                                 "ADILSONVOL2CAP20EXER2" ,
                                                  #"ADILSONVOL2CAP20EXER4" ,
                                                  #"ADILSONVOL2CAP20EXER9" ,
                                                  #"ADILSONVOL2CAP6EXE1"   ,
@@ -94,8 +93,8 @@ tabsetPanel(
            fluidRow(column(3,
                            selectInput("vetorPie",
                                        strong("Escolha uma opção:"),
-                                       choices=c("ADILSONVOL2CAP20EXER2"),
-                                       selected = "ADILSONVOL2CAP20EXER2")),
+                                       choices=c("ADILSONVOL2CAP6EXE2"),
+                                       selected = "ADILSONVOL2CAP6EXE2")),
                     column(9,
                            plotOutput("plotPie"))))
 
