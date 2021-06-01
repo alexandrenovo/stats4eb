@@ -61,7 +61,18 @@ tabsetPanel(
                                                    de string no eixo x e um campo de contagem, campo
                                                    numérico ou taxa/proporção no eixo y. O
                                                    comprimento de cada coluna representa o valor
-                                                        de cada categoria..</p></div>')))),
+                                                   de cada categoria. é um gráfico com barras retangulares
+                                                   e comprimento proporcional aos valores que ele
+                                                   apresenta. As barras podem ser desenhadas na
+                                                   vertical ou na horizontal. Um eixo do gráfico mostra especificamente
+                                                   o que está sendo comparado enquanto o outro eixo representa
+                                                   valores discretos. Alguns gráficos de barra apresentam barras
+                                                   agrupadas em grupos (gráficos de barras agrupadas) e outros
+                                                   mostram as barras divididas em sub-partes para mostrar efeito
+                                                   acumulativo (gráficos de barras empilhadas)</p></div>'),
+                           tags$ul(
+                             tags$b("Fonte:"), tags$a(href = "https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_barras#:~:text=Em%20uma%20coluna%20de%20um,de%20barra%20agrupados%20e%20empilhados.", "Wikipédia, a enciclopédia livre.")
+                           )))),
   ##
   tabPanel("Tabelas de Dupla Entrada",
            fluidRow(column(3,
