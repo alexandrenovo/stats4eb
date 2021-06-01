@@ -1,34 +1,108 @@
 tabsetPanel(
-  tabPanel("Gráficos de Colunas ou de Barras",
+  tabPanel("Gráficos de Colunas ou Barras",
            fluidRow(column(3,
                            selectInput("vetornome3",
                                        strong("Escolha uma opção:"),
-                                       choices=c("ADILSONVOL2CAP6EXE1",
-                                                 "ADILSONVOL2CAP6EXE2",
-                                                 "ADILSONVOL2CAP20EXEMP1"),
-                                       selected = "ADILSONVOL2CAP6EXE1")),
+                                       choices=c("ADILSONVOL2CAP20EXEMP1",
+                                                 "ADILSONVOL2CAP20EXER1" ,
+                                                 #"ADILSONVOL2CAP20EXER10",
+                                                 "ADILSONVOL2CAP20EXER2" ,
+                                                 #"ADILSONVOL2CAP20EXER4" ,
+                                                 #"ADILSONVOL2CAP20EXER9" ,
+                                                 #"ADILSONVOL2CAP6EXE1"   ,
+                                                 #"ADILSONVOL2CAP6EXE2"   ,
+                                                 #"BALESTRIVOL2CAP7EXEM4" ,
+                                                 #"BALESTRIVOL2CAP7EXEM5" ,
+                                                 "BALESTRIVOL2CAP7EXER12",
+                                                 #"BALESTRIVOL2CAP7EXER13",
+                                                 #"BALESTRIVOL2CAP7EXER6" ,
+                                                 "BALESTRIVOL2CAP7EXER7" ,
+                                                 "FABIOVOL1CAP1EXER19"   ,
+                                                 #"FABIOVOL1CAP1EXER22"   ,
+                                                 #"FABIOVOL1CAP1EXER23"   ,
+                                                 #"FABIOVOL1CAP1EXERAUTO4",
+                                                 #"FABIOVOL1CAP1EXERCOMP2",
+                                                 "FABIOVOL1CAP1EXERCOMP4",
+                                                 #"FABIOVOL3CAP3EXEM2"    ,
+                                                 #"FABIOVOL3CAP3EXEM3"    ,
+                                                 "FABIOVOL3CAP3EXEM7"    ,
+                                                 "FABIOVOL3CAP3EXER10"   ,
+                                                 "FABIOVOL3CAP3EXER15"   ,
+                                                 "FABIOVOL3CAP3EXER16"   ,
+                                                 "FABIOVOL3CAP3EXER19"   ,
+                                                 #"FABIOVOL3CAP3EXER22"   ,
+                                                 "FABIOVOL3CAP3EXER24"   ,
+                                                 "FABIOVOL3CAP3EXER25"   ,
+                                                 #"FABIOVOL3CAP3EXER5"    ,
+                                                 "FABIOVOL3CAP3EXER6"    ,
+                                                 #"FABIOVOL3CAP3EXER9"    ,
+                                                 #"FABIOVOL3CAP3EXERCOMP2",
+                                                 #"GELSONVOL1CAP13EXER12" ,
+                                                 #"GELSONVOL1CAP13EXER13" ,
+                                                 "GELSONVOL1CAP13EXER15" ,
+                                                 "GELSONVOL1CAP13EXER16" ,
+                                                 "GELSONVOL1CAP13EXER18" ,
+                                                 "GELSONVOL1CAP13EXER20" ,
+                                                 "GELSONVOL1CAP13EXER21" ),
+                                       selected = "ADILSONVOL2CAP20EXEMP1"),
+                           HTML('<div style = "text-align: justify;"><p>
+                                                   Um gráfico de colunas é criado exibindo um campo
+                                                   de string no eixo x e um campo de contagem, campo
+                                                   numérico ou taxa/proporção no eixo y. O
+                                                   comprimento de cada coluna representa o valor
+                                                        de cada categoria..</p></div>')),
                     column(3,
                            DT::dataTableOutput("table3")),
                     column(6,
                            plotlyOutput("plot2", height = 600)))),
   ##
-  tabPanel("Gráficos de Pizza",
+  tabPanel("Tabelas de Dupla Entrada",
            fluidRow(column(3,
-                           selectInput("vetornome4",
+                           selectInput("vetorDupla2",
                                        strong("Escolha uma opção:"),
-                                       choices=c("ADILSONVOL2CAP6EXE1",
-                                                 "ADILSONVOL2CAP6EXE2",
-                                                 "ADILSONVOL2CAP20EXEMP1"),
-                                       selected = "ADILSONVOL2CAP6EXE1")),
+                                       choices=c("BALESTRIVOL2CAP7EXER6",
+                                                 "FABIOVOL1CAP1EXERCOMP2"),
+                                       selected = "BALESTRIVOL2CAP7EXER6")),
                     column(9,
-                           DT::dataTableOutput("table4"))))
+                           DT::dataTableOutput("tableDupla2")))),
 
   ##
 
+  ##
+  tabPanel("Gráficos Pictóricos",
+           fluidRow(column(3,
+                           selectInput("vetorPic2",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("Simpsons",
+                                                 "Lápis",
+                                                 "Foguete"),
+                                       selected = "Simpsons")),
+                    column(9,
+                           echarts4rOutput("plotPic2")))),
+
+  tabPanel("Diagrama de Ramos e Folhas",
+           fluidRow(column(3,
+                           selectInput("vetorTree",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER9",
+                                         "BALESTRIVOL2CAP7EXEM5",
+                                         "FABIOVOL3CAP3EXER22"),
+                                       selected = "ADILSONVOL2CAP20EXER9")),
+                    column(9,
+                           verbatimTextOutput("plotTree")))),
+  tabPanel("Gráficos de Pizza",
+           fluidRow(column(3,
+                           selectInput("vetorPie",
+                                       strong("Escolha uma opção:"),
+                                       choices=c("ADILSONVOL2CAP20EXER2"),
+                                       selected = "ADILSONVOL2CAP20EXER2")),
+                    column(9,
+                           plotOutput("plotPie"))))
+
 )# barra de navegacao interna
 
-#Reconhecer titulo, eixos, legendas, fontes e datas
-#grafico de setores
-#Graficos de barras, colunas, linhas ou setores
-#Distribuicao de Frequencias
-#Boxplot
+
+#Grafico de barras ou colunas
+#Criar uma tabela de dupla entrada
+#Graficos com variaveis categoricas (discretas e continuas)
+#Criar um grafico pictoricos
