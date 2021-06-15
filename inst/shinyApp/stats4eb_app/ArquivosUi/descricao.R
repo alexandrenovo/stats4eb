@@ -7,7 +7,7 @@ tabsetPanel(
                              sidebarPanel(
                                p(style="text-align: justify;","Este dashboard é resultado do trabalho de
                                         dissertação de mestrado do estudante do Curso de Mestrado Profissional
-                                        em Rede Nacional Alexandre Fonseca. Orientado pelo professor
+                                        em Rede Nacional Alexandre Fonseca Santos. Orientado pelo professor
                                         Fernando de Souza Bastos, ambos da Universidade Federal de Viçosa -
                                         campus UFV - Florestal."),
                                p(style="text-align: justify;","O código utilizado para construir
@@ -17,7 +17,7 @@ tabsetPanel(
                              ),
                              h4(style="text-align: justify;","  Um dos objetivos da Estatística
                              é apresentar dados de forma simples e objetiva, ou seja, de forma
-                             significativa. Freqüentemente, os conjuntos de dados envolvem uma
+                             significativa. Frequentemente, os conjuntos de dados envolvem uma
                              quantidade enorme de valores. São muitos para imprimir em um texto
                              escrito. É aí que os gráficos podem ser necessários, permitindo que os
                              estatísticos forneçam uma interpretação visual de histórias numéricas

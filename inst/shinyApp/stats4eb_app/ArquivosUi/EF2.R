@@ -123,7 +123,17 @@ tabsetPanel(
                                          "FABIOVOL3CAP3EXER22"),
                                        selected = "ADILSONVOL2CAP20EXER9")),
                     column(9,
-                           verbatimTextOutput("plotTree")))),
+                           verbatimTextOutput("plotTree"),
+                           br(),
+                           hr(),
+                           p("Um diagrama de ramos e folhas é utilizado para apresentar dados qualitativos,
+                             semelhantes a um histograma, usado especialmente em análise exploratória de dados.
+                             Seu modelo básico contém duas colunas separadas por uma linha vertical. Os ramos
+                             estão na coluna da esquerda e na coluna da direita, contém as folhas."),
+                           tags$ul(
+                             tags$b("Fonte:"), tags$a(href = "https://pt.wikipedia.org/wiki/Diagrama_de_ramos_e_folhas#:~:text=Em%20uma%20coluna%20de%20um,de%20barra%20agrupados%20e%20empilhados.", "Wikipédia, a enciclopédia livre.")
+                           )))),
+
   tabPanel("Gráficos de Pizza",
            fluidRow(column(3,
                            selectInput("vetorPie",
@@ -131,7 +141,17 @@ tabsetPanel(
                                        choices=c("ADILSONVOL2CAP6EXE2"),
                                        selected = "ADILSONVOL2CAP6EXE2")),
                     column(9,
-                           plotOutput("plotPie"))))
+                           plotOutput("plotPie"),
+                           br(),
+                           hr(),
+                           p("O gráfico de composição em setores é especialmente utilizado para
+                             representar variáveis categóricas, destinando-se a representar composição,
+                             usualmente em porcentagem, de partes de um todo. Consiste em um círculo de
+                             raio arbitrário, representando o todo, dividido em setores, que correspondes as
+                             partes de maneira proporcional (1% corresponde a 3,6°)."),
+                           tags$ul(
+                             tags$b("Fonte:"), tags$a(href = "https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_setores#:~:text=Em%20uma%20coluna%20de%20um,de%20barra%20agrupados%20e%20empilhados.", "Wikipédia, a enciclopédia livre.")
+                    ))))
 
 )# barra de navegacao interna
 

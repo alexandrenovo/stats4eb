@@ -1,0 +1,14 @@
+name: stats4eb_app
+title: stats4eb_app
+username:
+account: alexandrenovo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4276193
+bundleId: 4719981
+url: https://alexandrenovo.shinyapps.io/stats4eb_app/
+when: 1623781322.56181
+lastSyncTime: 1623781322.56185
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: LeidenRanking.Rds

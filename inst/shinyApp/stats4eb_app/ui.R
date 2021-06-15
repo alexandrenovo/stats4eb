@@ -13,10 +13,10 @@ shinyUI(fluidPage(theme = shinytheme("sandstone"),
                tabPanel("Descrição",
                         source(file="ArquivosUi/descricao.R", local = T, encoding = "UTF-8")[1]
                ),
-               tabPanel("Ensino Fundamental I",
+               tabPanel("Ensino Fundamental Anos Iniciais",
                         source(file="ArquivosUi/EF1.R", local = T, encoding = "UTF-8")[1]
                     ),
-               tabPanel("Ensino Fundamental II",
+               tabPanel("Ensino Fundamental Anos Finais",
                         source(file="ArquivosUi/EF2.R", local = T, encoding = "UTF-8")[1]
                ),# barra de navegacao superior (Dados do Participante)
 

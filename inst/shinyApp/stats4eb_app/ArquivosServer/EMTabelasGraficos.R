@@ -825,11 +825,11 @@ output$plotBox <- renderPlot({
                              labels = c("May", "Jun", "Jul", "Aug", "Sep"))
   ggplot2::ggplot(airquality, aes(x = Month, y = Ozone)) +
     ggplot2::geom_boxplot(colour = "black", fill = "#56B4E9") +
-    ggplot2::scale_y_continuous(name = "Mean ozone in\nparts per billion",
+    ggplot2::scale_y_continuous(name = "Ozônio médio em \npartes por bilhão",
                        breaks = seq(0, 175, 25),
                        limits=c(0, 175)) +
-    ggplot2::scale_x_discrete(name = "Month") +
-    ggplot2::ggtitle("Boxplot of mean ozone by month") +
+    ggplot2::scale_x_discrete(name = "Mês") +
+    ggplot2::ggtitle("Boxplot da média de ozônio por mês") +
     ggplot2::theme(axis.line.x = element_line(size = 0.5, colour = "black"),
           axis.line.y = element_line(size = 0.5, colour = "black"),
           axis.line = element_line(size=1, colour = "black"),
