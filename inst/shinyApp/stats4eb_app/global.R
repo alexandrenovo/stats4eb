@@ -45,7 +45,6 @@ dred = 'rgb(100,30,30)'
 load("data/ADILSONVOL2CAP20EXEMP1.rda")
 load("data/ADILSONVOL2CAP20EXER1.rda" )
 load("data/ADILSONVOL2CAP20EXER10.rda")
-load("data/ADILSONVOL2CAP20EXER2.rda" )
 load("data/ADILSONVOL2CAP20EXER4.rda" )
 load("data/ADILSONVOL2CAP20EXER9.rda" )
 load("data/ADILSONVOL2CAP6EXE1.rda"   )

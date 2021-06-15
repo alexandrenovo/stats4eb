@@ -19,9 +19,6 @@ output$table3 <- DT::renderDataTable({
           if(input$vetornome3=="ADILSONVOL2CAP20EXER10"){
             data <- ADILSONVOL2CAP20EXER10
           } else {
-            if(input$vetornome3=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-            } else {
               if(input$vetornome3=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
               } else {
@@ -164,7 +161,7 @@ output$table3 <- DT::renderDataTable({
         }
       }
     }
-  }
+  #}
 
 
 
@@ -218,14 +215,6 @@ output$plot2 <- renderPlotly({
             data <- ADILSONVOL2CAP20EXER10
             HTML('<div style = "text-align: justify;"><p>Criar Distribuição de Frequências.</p></div>')
           } else {
-            if(input$vetornome3=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-              plot2 <- ggplot2::ggplot(data, aes(CLUBE, `PERCENTUAL DE TORCEDORES`, fill=CLUBE)) +
-                ggplot2::geom_col(show.legend = FALSE) +
-                ggplot2::ggtitle("PERCENTUAL DE TORCEDORES") +
-                #ggplot2::scale_x_continuous(breaks=seq(1997,2007, length=11)) +
-                ggplot2::theme_minimal()
-            } else {
               if(input$vetornome3=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
                 HTML('<div style = "text-align: justify;"><p>Criar tabela dupla entrada.</p></div>')
@@ -494,7 +483,7 @@ output$plot2 <- renderPlotly({
         }
       }
     }
-  }
+  #}
 
   plotly::ggplotly(plot2) %>% plotly::layout(showlegend = FALSE) %>% plotly::style(textposition = "top")
 
@@ -521,9 +510,6 @@ output$tableDupla2 <- DT::renderDataTable({
           if(input$vetorDupla2=="ADILSONVOL2CAP20EXER10"){
             data <- ADILSONVOL2CAP20EXER10
           } else {
-            if(input$vetorDupla2=="ADILSONVOL2CAP20EXER2"){
-              data <- ADILSONVOL2CAP20EXER2
-            } else {
               if(input$vetorDupla2=="ADILSONVOL2CAP20EXER4"){
                 data <- ADILSONVOL2CAP20EXER4
               } else {
@@ -666,7 +652,7 @@ output$tableDupla2 <- DT::renderDataTable({
         }
       }
     }
-  }
+  #}
 
 
 
@@ -806,7 +792,7 @@ output$plotTree <- renderPrint({
 
 output$plotPie <- renderPlot({
   #if(input$vetorPie=="ADILSONVOL2CAP20EXER2"){
-    data <- ADILSONVOL2CAP20EXER2
+    data <- ADILSONVOL2CAP6EXE2
     data$`PERCENTUAL DE TORCEDORES` <- as.numeric(as.character(data$`PERCENTUAL DE TORCEDORES`))
     pct <- round(data$`PERCENTUAL DE TORCEDORES`)
     # Draw oie chart
