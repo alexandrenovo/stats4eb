@@ -53,7 +53,24 @@ tabsetPanel(
                     column(3,
                            DT::dataTableOutput("table4")),
                     column(6,
-                           plotlyOutput("plot3", height = 600)))),
+                           plotlyOutput("plot3", height = 600),
+                           HTML('<div style = "text-align: justify;"><p>
+                                                   Um gráfico de colunas é criado exibindo um campo
+                                                   de string no eixo x e um campo de contagem, campo
+                                                   numérico ou taxa/proporção no eixo y. O
+                                                   comprimento de cada coluna representa o valor
+                                                   de cada categoria. é um gráfico com barras retangulares
+                                                   e comprimento proporcional aos valores que ele
+                                                   apresenta. As barras podem ser desenhadas na
+                                                   vertical ou na horizontal. Um eixo do gráfico mostra especificamente
+                                                   o que está sendo comparado enquanto o outro eixo representa
+                                                   valores discretos. Alguns gráficos de barra apresentam barras
+                                                   agrupadas em grupos (gráficos de barras agrupadas) e outros
+                                                   mostram as barras divididas em sub-partes para mostrar efeito
+                                                   acumulativo (gráficos de barras empilhadas)</p></div>'),
+                           tags$ul(
+                             tags$b("Fonte:"), tags$a(href = "https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_barras#:~:text=Em%20uma%20coluna%20de%20um,de%20barra%20agrupados%20e%20empilhados.", "Wikipédia, a enciclopédia livre.")
+                           )))),
   ##
   tabPanel("Tabelas de Dupla Entrada",
            fluidRow(column(3,
@@ -63,10 +80,19 @@ tabsetPanel(
                                                  "FABIOVOL1CAP1EXERCOMP2"),
                                        selected = "BALESTRIVOL2CAP7EXER6")),
                     column(9,
-                           DT::dataTableOutput("tableDuplaEM")))),
+                           DT::dataTableOutput("tableDuplaEM"),
+                           br(),
+                           hr(),
+                           p("As  tabelas  de  dupla  entrada  ou  tabelas
+                             de  contingência são formadas  pelo  cruzamento
+                             de  duas variáveis categóricas, portanto, é uma
+                             matriz de tamanho “lxc” formada por “l” linhas
+                             contendo as categorias de uma variável na linha
+                             e “c” colunas contendo as categorias de outra
+                             variável na coluna"),
+                    ))),
 
   ##
-
   ##
   tabPanel("Gráficos Pictóricos",
            fluidRow(column(3,
@@ -77,7 +103,15 @@ tabsetPanel(
                                                  "Foguete"),
                                        selected = "Simpsons")),
                     column(9,
-                           echarts4rOutput("plotPicEM")))),
+                           echarts4rOutput("plotPicEM"),
+                           br(),
+                           hr(),
+                           p("Um gráfico de imagem, ou pictograma, é um gráfico usado para exibir informações que usam imagens ou símbolos para representar dados."),
+                           tags$ul(
+                             tags$li(tags$b("Simpsons:"), tags$a(href = "https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html", "Pictogramas e infografías con R")),
+                             tags$li(tags$b("Lápis:"), tags$a(href = "https://www.listendata.com/2019/06/create-infographics-with-r.html", "Create Infographics With R")),
+                             tags$li(tags$b("Foguetes:"), tags$a(href = "https://rstudio-pubs-static.s3.amazonaws.com/571217_ae5270f8aaa541ac9a69b0f337613277.html", "Pictogramas e infografías con R"))
+                           )))),
 
   tabPanel("Diagrama de Ramos e Folhas",
            fluidRow(column(3,

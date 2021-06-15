@@ -680,7 +680,7 @@ output$plotPic <- echarts4r::renderEcharts4r({
       echarts4r::e_charts(x) %>%
       echarts4r::e_pictorial(y, symbol = paste0("image://","https://1.bp.blogspot.com/-klwxpFekdEQ/XOubIhkalyI/AAAAAAAAHlE/25psl9x4oNkbJoLc2CKTXgV2pEj6tAvigCLcBGAs/s1600/pencil.png")) %>%
       echarts4r::e_theme("westeros") %>%
-      echarts4r::e_title("Pencil Chart",  padding=c(10,0,0,50))%>%
+      echarts4r::e_title("Gráfico de Barra Pictórico ",  padding=c(10,0,0,50))%>%
       echarts4r::e_labels(show = TRUE)%>%
       echarts4r::e_legend(show = FALSE) %>%
       echarts4r::e_x_axis(splitLine=list(show = FALSE)) %>%
@@ -699,7 +699,7 @@ output$plotPic <- echarts4r::renderEcharts4r({
         echarts4r::e_charts(x) %>%
         echarts4r::e_pictorial(y, symbol = paste0("image://","https://1.bp.blogspot.com/-klwxpFekdEQ/XOubIhkalyI/AAAAAAAAHlE/25psl9x4oNkbJoLc2CKTXgV2pEj6tAvigCLcBGAs/s1600/pencil.png")) %>%
         echarts4r::e_theme("westeros") %>%
-        echarts4r::e_title("Pencil Chart",  padding=c(10,0,0,50))%>%
+        echarts4r::e_title("Gráfico de Barra Pictórico",  padding=c(10,0,0,50))%>%
         echarts4r::e_labels(show = TRUE)%>%
         echarts4r::e_legend(show = FALSE) %>%
         echarts4r::e_x_axis(splitLine=list(show = FALSE)) %>%
@@ -772,7 +772,7 @@ output$plotPic <- renderEcharts4r({
       echarts4r::e_pictorial(valor, imagen) %>%
       echarts4r::e_theme("westeros") %>%
       echarts4r::e_legend(F) %>%
-      echarts4r::e_title("Los Simpsons", left='center') %>%
+      echarts4r::e_title("Os Simpsons", left='center') %>%
       echarts4r::e_labels(show=TRUE) %>%
       echarts4r::e_x_axis(splitLine=list(show = F)) %>%
       echarts4r::e_y_axis(show=F, min=0, max=10,
@@ -791,7 +791,7 @@ output$plotPic <- renderEcharts4r({
         echarts4r::e_charts(x) %>%
         echarts4r::e_pictorial(y, symbol = paste0("image://","https://1.bp.blogspot.com/-klwxpFekdEQ/XOubIhkalyI/AAAAAAAAHlE/25psl9x4oNkbJoLc2CKTXgV2pEj6tAvigCLcBGAs/s1600/pencil.png")) %>%
         echarts4r::e_theme("westeros") %>%
-        echarts4r::e_title("Pencil Chart",  padding=c(10,0,0,50))%>%
+        echarts4r::e_title("Gráfico de Barra Pictórico",  padding=c(10,0,0,50))%>%
         echarts4r::e_labels(show = TRUE)%>%
         echarts4r::e_legend(show = FALSE) %>%
         echarts4r::e_x_axis(splitLine=list(show = FALSE)) %>%
@@ -825,7 +825,7 @@ output$plotPic <- renderEcharts4r({
                     imagen) %>%
         echarts4r::e_theme("westeros") %>%
         echarts4r::e_legend(F) %>%
-        echarts4r::e_title("Lanzamientos espaciales en 2015", left='center') %>%
+        echarts4r::e_title("Lançamentos Espaciais em 2015", left='center') %>%
         echarts4r::e_labels(show=TRUE) %>%
         echarts4r::e_x_axis(splitLine=list(show = T)) %>%
         echarts4r::e_y_axis(show= T,
